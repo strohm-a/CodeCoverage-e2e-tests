@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - ls
+reports:
+  jacoco-report:
+    files:
+      - 'CodeCoverage-e2e-tests/jacoco-report.xml'
+    file-format: 'JACOCOXML'
