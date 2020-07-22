@@ -6,17 +6,17 @@ phases:
 reports:
   jacoco-report:
     files:
-      - 'CodeCoverage-e2e-tests/jacoco-report.xml'
+      - 'test-results/Test-jacococoveragereport.xml'
     file-format: 'JACOCOXML'
   simplecov-report:
     files:
-      - 'CodeCoverage-e2e-tests/Test-simplecov.json'
+      - 'test-results/Test-simplecov.json'
     file-format: 'SIMPLECOV'
   clover-report:
     files:
-      - 'CodeCoverage-e2e-tests/Test-cloverreport.xml'
+      - 'test-results/Test-cloverreport.xml'
     file-format: 'CLOVERXML'
   cobertura-report:
     files:
-      - 'CodeCoverage-e2e-tests/Test-coberturareport.xml'
+      - 'test-results/Test-coberturareport.xml'
     file-format: 'COBERTURAXML'
