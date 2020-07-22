@@ -1,11 +1,22 @@
 version: 0.2
-
 phases:
   build:
     commands:
-      - ls
+      - echo Parsing Code coverage reports
 reports:
   jacoco-report:
     files:
       - 'CodeCoverage-e2e-tests/jacoco-report.xml'
     file-format: 'JACOCOXML'
+  simplecov-report:
+    files:
+      - 'CodeCoverage-e2e-tests/Test-simplecov.json'
+    file-format: 'SIMPLECOV'
+  clover-report:
+    files:
+      - 'CodeCoverage-e2e-tests/Test-cloverreport.xml'
+    file-format: 'CLOVERXML'
+  cobertura-report:
+    files:
+      - 'CodeCoverage-e2e-tests/Test-coberturareport.xml'
+    file-format: 'COBERTURAXML'
